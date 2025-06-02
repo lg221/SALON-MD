@@ -1,18 +1,19 @@
 {
-  "name": "FRONEXT-MD",
+  "name": "SALON-MD",
   "version": "2.0.0",
-  "description": "This is whatsapp multie Device Bot created by Team Avi ofc",
+  "description": "This is whatsapp multie Device Bot created by Team visu ofc",
   "main": "index.js",
   "scripts": {
-    "start": "pm2 start index.js --deep-monitoring --attach --name FRONEXT-MD",
-    "stop": "pm2 stop FRONEXT-MD",
-    "restart": "pm2 restart FRONEXT-MD"
+    "start": "pm2 start index.js --deep-monitoring --attach --name SALON-MD",
+    "stop": "pm2 stop SALON-MD",
+    "restart": "pm2 restart SALON-MD"
   },
   "dependencies": {
-    "@whiskeysockets/baileys": "^6.7.16",
+    "@whiskeysockets/baileys": "github:AxellNetwork/Baileys",
+    "denethdev-ytmp3": "^1.0.3",
     "@adiwajshing/keyed-db": "^0.2.4",
     "whatsapp-web.js": "1.26.0",
-        "pino": "^7.0.5",
+    "pino": "^7.0.5",
     "pm2": "^6.0.5",
     "util": "^0.12.4",
     "express": "latest",
