@@ -37,7 +37,7 @@ cmd({
 
 ▫️⏱️ *Dᴜʀᴀᴛɪᴏɴ :* ${songData.timestamp} 
 
-▫️*React කරන්න ලමයෝ* 🇱🇰💗
+▫️ *React කරන්න ලමයෝ* 🇱🇰💗
  `;
     
 
