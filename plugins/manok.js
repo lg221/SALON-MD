@@ -33,19 +33,11 @@ cmd({
     const downloadLink = result.downloadUrl; // Get the download URL
 
     let songDetailsMessage = `
-☘️ *Tɪᴛʟᴇ :* ${bold}${songData.title}${bold}   🙇‍♂️💗  
+☘️ *Tɪᴛʟᴇ :* ${bold}${songData.title}${bold}   🙇‍♂️💗 
 
-▫️🎭 *Wɪᴇᴡꜱ :* ${songData.views}   
 ▫️⏱️ *Dᴜʀᴀᴛɪᴏɴ :* ${songData.timestamp} 
-▫️📅 *Rᴇʟᴇᴀꜱᴇ Dᴀᴛᴇ :* ${songData.ago}    
-▫️❄️ *Channel:* ${songData.author.name}    
-▫️🔗 *Lɪɴᴋ :* ${songData.url}
 
-> 𝗨𝘀𝗲 𝗛𝗲𝗮𝗱𝗽𝗵𝗼𝗻𝗲𝘀 𝗚𝗲𝘁 𝗚𝗼𝗼𝗱 𝗘𝘅𝗽𝗲𝗿𝗶𝗲𝗻𝘀𝗲💆‍♂️💗
-
-*_මේ වගේ ලස්සන සිංදු අහන්න චැනල් එක follow කරල තියාගන්න ලස්සන ලමයෝහ්...💗💆‍♂️_*
-
-❝SL MUSIC HUB💆‍♂️🎧 ᥫ᭡ Song Uploading❞
+▫️*React කරන්න ලමයෝ* 🇱🇰💗
  `;
     
 
