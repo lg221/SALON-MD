@@ -1,63 +1,79 @@
-const { cmd } = require('../command');
-const fetch = require("node-fetch");
-const ytsearch = require("yt-search");
+const { cmd } = require("../lib/command");
+const yts = require("yt-search");
+const axios = require("axios");
+const config = require("../config");
 
-cmd({ 
-    pattern: "mp3", 
-    alias: ["audio", "song"], 
-    react: "🎵", 
-    desc: "Download YouTube audio", 
-    category: "download", 
-    use: '.mp3 <YouTube URL or Name>', 
-    filename: __filename 
-}, async (conn, mek, m, { from, prefix, quoted, q, reply }) => { 
-    try { 
-        if (!q) return await reply("⚠️ කරුණාකර YouTube URL හෝ ගීත නමක් ලබා දෙන්න!");
+cmd(
+  {
+    pattern: "channel",
+    alias: ["my"],
+    desc: "Send YouTube MP3 to a specific JID",
+    category: "download",
+    react: "🎧",
+    filename: __filename,
+  },
+  async (robin, mek, m, { q, reply }) => {
+    try {
+      if (!q) return reply("*ඔයාලා ගීත නමක් හෝ YouTube ලින්ක් එකක් දෙන්න...!*");
 
-        const yt = await ytsearch(q);
-        if (yt.videos.length < 1) return reply("❌ ප්‍රතිඵල නැත!");
+      const search = await yts(q);
+      if (!search.videos.length) return reply("*ගීතය හමුනොවුණා... ❌*");
 
-        let yts = yt.videos[0];  
-        let apiUrl = `https://apis.davidcyriltech.my.id/download/ytmp3?url=${encodeURIComponent(yts.url)}`;
+      const data = search.videos[0];
+      const ytUrl = data.url;
 
-        let response = await fetch(apiUrl);
-        let data = await response.json();
+      const api = `https://yt-five-tau.vercel.app/download?q=${ytUrl}&format=mp3`;
+      const { data: apiRes } = await axios.get(api);
 
-        if (!data || data.status !== 200 || !data.result || !data.result.download_url) {
-            return reply("⚠️ MP3 ලබා ගැනීම අසාර්ථකයි. කරුණාකර පසුව උත්සාහ කරන්න.");
-        }
+      if (!apiRes?.status || !apiRes.result?.download) {
+        return reply("❌ ගීතය බාගත කළ නොහැක. වෙනත් එකක් උත්සහ කරන්න!");
+      }
 
-        let ytmsg = `╭━━━〔 *🎭 FRONEXT MD 🃏* 〕━━━┈⊷
-┃▸╭─────────────────
-┃▸┃ 🎵 *AUDIO DOWNLOADER*
-┃▸└─────────────────···
-╰──────────────────────┈⊷
-╭━━❐━⪼
-┇📌 *Title:* ${yts.title}
-┇⏱️ *Duration:* ${yts.timestamp}
-┇👀 *Views:* ${yts.views}
-┇👤 *Author:* ${yts.author.name}
-┇🔗 *Link:* ${yts.url}
-╰━━❑━⪼
+      const result = apiRes.result;
 
-*🎶 Quality Audio Downloader By FRONEXT  MD*`;
+      const caption = `*~⋆｡˚☁︎｡⋆｡__________________________⋆｡☁︎˚｡⋆~*
 
-        await conn.sendMessage(from, { image: { url: yts.thumbnail || '' }, caption: ytmsg }, { quoted: mek });
-        await conn.sendMessage(from, { 
-            audio: { url: data.result.download_url }, 
-            mimetype: "audio/mp4", 
-            ptt: false 
-        }, { quoted: mek });
+\`❍. Song ➙\`
 
-        await conn.sendMessage(from, { 
-            document: { url: data.result.download_url }, 
-            mimetype: "audio/mp4", 
-            fileName: `${yts.title}.mp3`, 
-            caption: `🎵 *${yts.title}*\n\n*🌟 Created By:* CYBER FROLY \n*🤖 Bot:* FRONEXT MD`
-        }, { quoted: mek });
+\`❍.Time ➙\`          \`❍.Uploaded ➙\`
 
+
+> ```❝REACT කරන්න ලමයෝහ්😽💗🍃❞``
+
+_*ලස්සන සිංදු💗🇱🇰◦◦*_`;
+
+      // Send thumbnail and caption to configured JID
+      await robin.sendMessage(
+        config.DINUWH,
+        {
+          image: { url: result.thumbnail },
+          caption: caption,
+        },
+        { quoted: mek }
+      );
+
+      // Send audio to the same JID
+      await robin.sendMessage(
+        config.DINUWH,
+        {
+          audio: { url: result.download },
+          mimetype: "audio/mpeg",
+          ptt: true,
+        },
+        { quoted: mek }
+      );
+
+      // Confirmation message to command sender
+      await robin.sendMessage(
+        mek.key.remoteJid,
+        {
+          text: `✅ *"${result.title}"* නම් ගීතය *${config.DINUWH}* වෙත සාර්ථකව යවනු ලැබීය.`,
+        },
+        { quoted: mek }
+      );
     } catch (e) {
-        console.error(e);
-        reply("❌ දෝෂයක් ඇතිවිය. කරුණාකර පසුව උත්සාහ කරන්න.");
+      console.error(e);
+      reply("*ඇතැම් දෝෂයකි! පසුව නැවත උත්සහ කරන්න.*");
     }
-});
+  }
+);
