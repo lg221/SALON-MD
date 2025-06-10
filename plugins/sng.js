@@ -1,11 +1,12 @@
-const { cmd } = require("../command");
+const { cmd } = require("../lib/command");
 const yts = require("yt-search");
 const axios = require("axios");
-const config = require("../config");
+const config = require("../settings");
 
 cmd(
   {
-    pattern: "tharusha",
+    pattern: "channel",
+    alias: ["my"],
     desc: "Send YouTube MP3 to a specific JID",
     category: "download",
     react: "🎧",
@@ -30,25 +31,21 @@ cmd(
 
       const result = apiRes.result;
 
-      const caption = `◈=======================◈
-╭─
-┃ 🎵 *𝙏𝙞𝙩𝙡𝙚* : ${result.title}
-┃
-┃ ⏱️ *𝘿𝙪𝙧𝙖𝙩𝙞𝙤𝙣* : ${data.timestamp}
-┃
-┃ 📅 *𝙍𝙚𝙡𝙚𝙖𝙨𝙚* : ${data.ago}
-┃
-┃ 📊 *𝙑𝙞𝙚𝙬𝙨* : ${data.views}
-┃
-┃ 🔗 *𝙇𝙞𝙣𝙠* : ${data.url}
-╰
-⦁⦂⦁━┉━┉━┉━┉━┉━┉━┉━⦁⦂⦁
+      const caption = `*~⋆｡˚☁︎｡⋆｡__________________________⋆｡☁︎˚｡⋆~*
 
-*🎧 Use headphones for best experience..!*`;
+\`❍. Song ➙\`
+
+\`❍.Time ➙\`          \`❍.Uploaded ➙\`
+
+
+> ```❝♬.REACT කරම්න යාලූ😽💗🍃❞``
+`
+
+_*𝗨𝗦𝗘 𝗛𝗘𝗔𝗗𝗣𝗛𝗢𝗡𝗘𝗦 𝗚𝗘𝗧 𝗕𝗘𝗦𝗧 𝗘𝗫𝗣𝗜𝗥𝗜𝗘𝗡𝗖𝗘*_`;
 
       // Send thumbnail and caption to configured JID
       await robin.sendMessage(
-        config.THARUSHA,
+        config.DINUWH,
         {
           image: { url: result.thumbnail },
           caption: caption,
@@ -58,7 +55,7 @@ cmd(
 
       // Send audio to the same JID
       await robin.sendMessage(
-        config.THARUSHA,
+        config.DINUWH,
         {
           audio: { url: result.download },
           mimetype: "audio/mpeg",
@@ -71,7 +68,7 @@ cmd(
       await robin.sendMessage(
         mek.key.remoteJid,
         {
-          text: `✅ *"${result.title}"* නම් ගීතය *${config.THARUSHA}* වෙත සාර්ථකව යවනු ලැබීය.`,
+          text: `✅ *"${result.title}"* නම් ගීතය *${config.DINUWH}* වෙත සාර්ථකව යවනු ලැබීය.`,
         },
         { quoted: mek }
       );
