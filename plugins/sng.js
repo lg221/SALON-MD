@@ -41,7 +41,7 @@ cmd(
 > ```❝♬.𝗥𝗘𝗔𝗖𝗧 𝗣𝗟𝗘𝗔𝗦𝗘 𝗚𝗨𝗬𝗦😽💗🍃❞``
 `
 > *||____*🔹.◦◦◦ \`[💜\\💛\\🩷\\🤍\\💚]\` 
-_*ලස්සන සිංදු 🇱🇰💗◦◦◦*_`;
+_*BEST WHATSAPP CHANNEL IN SRI LANKA*_`;
 
       // Send thumbnail and caption to configured JID
       await robin.sendMessage(
