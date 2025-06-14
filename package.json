@@ -33,6 +33,7 @@
     "stream" : "0.0.3",
     "ruhend-scraper" : "7.0.6",
     "@sl-code-lords/esana-news" : "latest",
+    "@dark-yasiya/yt-dl.js" : "latest"
     "@kaveesha-sithum/derana-news" : "latest",
     "moment-timezone": "latest",
     "@sl-code-lords/movie-api": "1.0.0",    
