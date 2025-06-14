@@ -1,7 +1,7 @@
-const { cmd } = require("../lib/command");
+const { cmd,commands } = require("../command");
 const yts = require("yt-search");
 const axios = require("axios");
-const config = require("../settings");
+const config = require("../config");
 
 cmd(
   {
