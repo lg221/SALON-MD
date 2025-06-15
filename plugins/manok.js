@@ -12,7 +12,7 @@ cmd({
   category: "download",
   react: '🎧',
   filename: __filename
-}, async (messageHandler, context, quotedMessage, { from, reply, q }) => {
+}, async (messageHandler, conn, context, mek, quotedMessage, { from, reply, q }) => {
   try {
     if (!q) return reply("*Please Provide A Song Name or Url 🙄*");
     
@@ -51,11 +51,16 @@ await messageHandler.sendMessage(jid, {
     
 
       
-             await messageHandler.sendMessage(jid, {
+             /*await messageHandler.sendMessage(jid, {
               audio: { url: downloadLink },
               mimetype: "audio/mpeg",
                  ptt: true
-            }, { quoted: quotedMessage });
+            }, { quoted: quotedMessage });*/
+    await conn.sendFile(
+          jid,
+          downloadLink,
+          mek
+        );
             
         
     } catch (error) {
