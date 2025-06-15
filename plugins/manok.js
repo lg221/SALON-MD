@@ -12,7 +12,8 @@ cmd({
   category: "download",
   react: '🎧',
   filename: __filename
-}, async (messageHandler, conn, context, mek, quotedMessage, { from, reply, q }) => {
+}, async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
+
   try {
     if (!q) return reply("*Please Provide A Song Name or Url 🙄*");
     
@@ -43,10 +44,10 @@ cmd({
 
     
     // Send the video thumbnail with song details
-await messageHandler.sendMessage(jid, {
+await conn.sendMessage(jid, {
       image: { url: songData.thumbnail },
       caption: songDetailsMessage,
-    }, { quoted: quotedMessage });
+    });
 
     
 
@@ -58,8 +59,7 @@ await messageHandler.sendMessage(jid, {
             }, { quoted: quotedMessage });*/
     await conn.sendFile(
           jid,
-          downloadLink,
-          mek
+          downloadLink
         );
             
         
