@@ -47,8 +47,8 @@ _Reply to this message with 1 or 2 to download._`;
             forwardingScore: 999,
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
-                newsletterJid: '120363288304618280@newsletter',
-                newsletterName: 'SMART-TECH TRENDS',
+                newsletterJid: '120363417168743361@newsletter',
+                newsletterName: 'VISHWA-MD BOT🎭',
                 serverMessageId: 143
             }
         };
@@ -129,17 +129,17 @@ cmd({
             return reply("Failed to fetch the audio. Please try again later.");
         }
         
-        let ytmsg = `🎵 *Song Details*
+        let ytmsg = `🎵 *VISHWA-MD SONGS DETAILS🎭*
 🎶 *Title:* ${yts.title}
 ⏳ *Duration:* ${yts.timestamp}
 👀 *Views:* ${yts.views}
 👤 *Author:* ${yts.author.name}
 🔗 *Link:* ${yts.url}
 
-*Choose download format:*
-1. 📄 MP3 as Document
-2. 🎧 MP3 as Audio (Play)
-3. 🎙️ MP3 as Voice Note (PTT)
+*Choose download format:🤺*
+> 1. 📄 MP3 as Document
+> 2. 🎧 MP3 as Audio (Play)
+> 3. 🎙️ MP3 as Voice Note (PTT)
 
 _Reply with 1, 2 or 3 to this message to download the format you prefer._`;
         
@@ -148,8 +148,8 @@ _Reply with 1, 2 or 3 to this message to download the format you prefer._`;
             forwardingScore: 999,
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
-                newsletterJid: '120363288304618280@newsletter',
-                newsletterName: 'SMART-TECH TRENDS',
+                newsletterJid: '120363417168743361@newsletter',
+                newsletterName: 'VISHWA-MD BOT🎭',
                 serverMessageId: 143
             }
         };
