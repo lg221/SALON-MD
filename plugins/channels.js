@@ -27,7 +27,7 @@ cmd({
     const _0x54b6a5 = _0x3c9620.url;
     const _0x149cfa = await ddownr.download(_0x54b6a5, "mp3");
     const _0x31976b = _0x149cfa.downloadUrl;
-    let _0x25cf84 = " *💚 𝐓𝐈𝐓𝐋𝐄 💚 -  " + _0x163fa7.title*  + "\n\n▫️ 𝙳𝚄𝚁𝙰𝚃𝙸𝙾𝙽 - " + _0x163fa7.timestamp + "\n▫️ 𝚄𝙿𝙻𝙾𝙰𝙳𝙴𝚁 -  " + _0x163fa7.author.name + "\n▫️ 𝚅𝙸𝙴𝚆𝚂 -  " + _0x163fa7.views + "\n\n\n" + config.FOOTER;
+    let _0x25cf84 = " *💚 𝐓𝐈𝐓𝐋𝐄 💚 -  " + _0x163fa7.title  + "\n\n▫️ 𝙳𝚄𝚁𝙰𝚃𝙸𝙾𝙽 - " + _0x163fa7.timestamp + "\n▫️ 𝚄𝙿𝙻𝙾𝙰𝙳𝙴𝚁 -  " + _0x163fa7.author.name + "\n▫️ 𝚅𝙸𝙴𝚆𝚂 -  " + _0x163fa7.views + "\n\n\n" + config.FOOTER;
     await _0x5d43b6.sendMessage(_0x188841, {
       'image': {
         'url': _0x3c9620.thumbnail
@@ -73,7 +73,7 @@ cmd({
     const _0x11ed5e = _0x163fa7.url;
     const _0x5cfd86 = await ddownr.download(_0x11ed5e, "mp3");
     const _0x192bee = _0x5cfd86.downloadUrl;
-    let _0x22605e =  " 💚 𝐓𝐈𝐓𝐋𝐄 💚 -  " + *_0x163fa7.title* + "\n\n▫️ 𝙳𝚄𝚁𝙰𝚃𝙸𝙾𝙽 - " + *_0x163fa7.timestamp* + "\n▫️ 𝚄𝙿𝙻𝙾𝙰𝙳𝙴𝚁 -  " + *_0x163fa7.author.name* + "\n▫️ 𝚅𝙸𝙴𝚆𝚂 -  " + *_0x163fa7.views* + "\n\n\n" + config.FOOTER;
+    let _0x22605e =  " 💚 𝐓𝐈𝐓𝐋𝐄 💚 -  " + _0x163fa7.title + "\n\n▫️ 𝙳𝚄𝚁𝙰𝚃𝙸𝙾𝙽 - " + _0x163fa7.timestamp + "\n▫️ 𝚄𝙿𝙻𝙾𝙰𝙳𝙴𝚁 -  " + _0x163fa7.author.name + "\n▫️ 𝚅𝙸𝙴𝚆𝚂 -  " + _0x163fa7.views + "\n\n\n" + config.FOOTER;
     await _0x480897.sendMessage(config.JID, {
       'image': {
         'url': _0x163fa7.thumbnail
