@@ -261,7 +261,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         conversionInfo += `🔄 *Converted Amount*: ${convertedAmount} ${toCurrency}\n`;
         conversionInfo += `📈 *Exchange Rate*: 1 ${fromCurrency} = ${data.rates[toCurrency]} ${toCurrency}\n
         
-> *POWERED by FRONEXT MD*
+> *ᴩᴏᴡᴇʀᴇᴅ ʙy ᴠɪꜱʜᴡᴀ-ᴍᴅ🎭*
         `;
 
         await conn.sendMessage(from, { text: conversionInfo }, { quoted: mek });
@@ -298,7 +298,7 @@ async (conn, mek, m, { from, q, reply }) => {
 🔠 *Translated*: ${translation}
 🌐 *Language*: ${targetLang.toUpperCase()}
 
-*𝙵𝚁𝙾𝙽𝙴𝚇𝚃 𝙼𝙳 𝙱𝚈 𝙲𝚈𝙱𝙴𝚁 𝙵𝚁𝙾𝙻𝚈*`;
+> *ᴩᴏᴡᴇʀᴇᴅ ʙy ᴠɪꜱʜᴡᴀ-ᴍᴅ*`;
 
         return reply(translationMessage);
     } catch (e) {
