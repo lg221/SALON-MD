@@ -30,7 +30,7 @@ cmd({
 
     if (!metadata || !metadata.id) return reply("❌ Channel not found or inaccessible.");
 
-    const infoText = `*— 乂 Channel Info —*\n\n` +
+    const infoText = `*— 乂Vishwa-MD Channel Info Details —*\n\n` +
       `🆔 *ID:* ${metadata.id}\n` +
       `📌 *Name:* ${metadata.name}\n` +
       `👥 *Followers:* ${metadata.subscribers?.toLocaleString() || "N/A"}\n` +
