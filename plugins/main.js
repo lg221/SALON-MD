@@ -26,17 +26,17 @@ cmd({
         let monspace = '```';
         const snm = `👋 ${monspace} Hello ${pushname}, I'm alive now ${monspace}
 
-_*This Fronext whatsapp bot is made for your easy use. This bot is currently active🪄*_
+_*Vishwa-Md whatsapp bot is made for your easy use. This bot is currently active🪄*_
 
 > *Version:* ${require("../package.json").version}
 > *Memory:* ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${(os.totalmem() / 1024 / 1024).toFixed(2)}MB
 > *Runtime:* ${runtime(process.uptime())}
 > *Hostname:* ${hostname}
 
-*☘️ Follow our channel:* https://whatsapp.com/channel/0029Vb8xl0J1yT23afPbz12g
+*☘️ Follow our channel:* https://whatsapp.com/channel/0029Vb6Vpuo2v1IqThY6aU0y
 
-*Fʀᴏɴᴇxᴛ ᴍᴅ ᴡᴀ ʙᴏᴛ ᴄʀᴇᴀᴛᴇᴅ ʙʏ*
-*ᴄʏʙᴇʀ ꜰʀᴏʟʏ*`;
+*ᴩᴏᴡᴇʀᴇᴅ ʙy ᴠɪꜱʜᴡᴀ-ᴍᴅ*
+> OWNER VISHWA KODITHUWAKKU`;
 
         // Sending the audio message
         await conn.sendMessage(from, {
@@ -53,8 +53,8 @@ _*This Fronext whatsapp bot is made for your easy use. This bot is currently act
                 forwardingScore: 999,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterName: '𝐅𝐑𝐎𝐍𝐄𝐗𝐓 𝐌𝐃',
-                    newsletterJid: "120363394343494686@newsletter",
+                    newsletterName: 'VISHWA-MD BOT🎭',
+                    newsletterJid: "120363417168743361@newsletter",
                 }
             }
         }, { quoted: mek }); // Replaced 'mak' with 'mek'
@@ -77,7 +77,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
     try {
         let desc = `*👋 Hello ${pushname}*
 
-*╭─「 ꜰʀᴏɴᴇxᴛ ᴍᴅ ᴠ1 ᴄᴏᴍᴍᴀɴᴅ ᴘᴀɴᴇʟ 」*
+*╭─「 Vishwa Md v1 commands list🎭 」*
 *│◈ ʀᴜɴᴛɪᴍᴇ :* ${runtime(process.uptime())}
 *│◈ ʀᴀᴍ ᴜꜱᴀɢᴇ :* ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
 *╰──────────●●►*
@@ -99,7 +99,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 *│*
 *╰─────────*
 
-*©𝙵𝚁𝙾𝙽𝙴𝚇𝚃 𝙼𝙳 𝙱𝚈 𝙲𝚈𝙱𝙴𝚁 𝙵𝚁𝙾𝙻𝚈*`;
+*ᴩᴏᴡᴇʀᴇᴅ ʙy ᴠɪꜱʜᴡᴀ-ᴍᴅ🎭*`;
 
 
         await conn.sendMessage(from, {
@@ -125,7 +125,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 │ 🔖 *restart* 
 ╰──────────────────●●►
 
-> *𝐅𝐑𝐎𝐍𝐄𝐗𝐓 𝐌𝐃*`);
+> *ᴩᴏᴡᴇʀᴇᴅ ʙy ᴠɪꜱʜᴡᴀ-ᴍᴅ*`);
                         break;
                     case '2':               
                         reply(`*◈╾──CONVERT MENU──╼◈*
@@ -134,7 +134,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 │ 🔖 *convert* 
 ╰──────────────────●●►
 
-> *𝐅𝐑𝐎𝐍𝐄𝐗𝐓 𝐌𝐃*`);
+> *ᴩᴏᴡᴇʀᴇᴅ ʙy ᴠɪꜱʜᴡᴀ-ᴍᴅ*`);
                         break;
                     case '3':               
                         reply(`*◈╾──AI MENU──╼◈*
@@ -143,7 +143,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 │ 🔖 *ai* 
 ╰──────────────────●●►
 
-> *𝐅𝐑𝐎𝐍𝐄𝐗𝐓 𝐌𝐃*`);
+> *ᴩᴏᴡᴇʀᴇᴅ ʙy ᴠɪꜱʜᴡᴀ-ᴍᴅ*`);
                         break;
                     case '4':               
                         reply(`*◈╾──SEARCH MENU──╼◈*
@@ -155,7 +155,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 │ 🔖 *srepo* 
 ╰──────────────────●●►
 
-> *𝐅𝐑𝐎𝐍𝐄𝐗𝐓 𝐌𝐃*`);
+> *ᴩᴏᴡᴇʀᴇᴅ ʙy ᴠɪꜱʜᴡᴀ-ᴍᴅ*`);
                         break;
                     case '5':               
                         reply(`*◈╾──DOWNLOAD MENU──╼◈*
@@ -203,7 +203,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 │ 🔖 *img* 
 ╰──────────────────●●►
 
-> *𝐅𝐑𝐎𝐍𝐄𝐗𝐓 𝐌𝐃*`);
+> *ᴩᴏᴡᴇʀᴇᴅ ʙy ᴠɪꜱʜᴡᴀ-ᴍᴅ*`);
                         break;
                     case '7':               
                         reply(`*◈╾──MAIN MENU──╼◈*
@@ -233,7 +233,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 │ 🔖 *runtime* 
 ╰──────────────────●●►
 
-> *𝐅𝐑𝐎𝐍𝐄𝐗𝐓 𝐌𝐃*`);
+> *ᴩᴏᴡᴇʀᴇᴅ ʙy ᴠɪꜱʜᴡᴀ-ᴍᴅ*`);
                         break;
                     case '8':               
                         reply(`*◈╾──GROUP MENU──╼◈*
@@ -272,7 +272,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 │ 🔖 *gname* 
 ╰──────────────────●●►
 
-> *𝐅𝐑𝐎𝐍𝐄𝐗𝐓 𝐌𝐃*`);
+> *ᴩᴏᴡᴇʀᴇᴅ ʙy ᴠɪꜱʜᴡᴀ-ᴍᴅ*`);
                        break;
                     case '6':               
                         reply(`*◈╾──FUN MENU──╼◈*
@@ -290,7 +290,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 │ 🔖 *quote* 
 ╰──────────────────●●►
 
-> *𝐅𝐑𝐎𝐍𝐄𝐗𝐓 𝐌𝐃*`);
+> *ᴩᴏᴡᴇʀᴇᴅ ʙy ᴠɪꜱʜᴡᴀ-ᴍᴅ*`);
 
                         break;
                     case '9':               
@@ -306,7 +306,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 │ 🔖 *weather* 
 ╰──────────────────●●►
 
-> *𝐅𝐑𝐎𝐍𝐄𝐗𝐓 𝐌𝐃*`);
+> *ᴩᴏᴡᴇʀᴇᴅ ʙy ᴠɪꜱʜᴡᴀ-ᴍᴅ*`);
 
                         break;
                     case '10':               
@@ -319,7 +319,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 │ 🔖 *cinesub* 
 ╰──────────────────●●►  
 
-> *𝐅𝐑𝐎𝐍𝐄𝐗𝐓 𝐌𝐃*`);
+> *ᴩᴏᴡᴇʀᴇᴅ ʙy ᴠɪꜱʜᴡᴀ-ᴍᴅ*`);
 
                         break;
                     default:
@@ -375,13 +375,13 @@ async (conn, mek, m, { from, prefix, pushname, reply }) => {
         else if (os.hostname().length == 8) hostname = 'koyeb';
         else hostname = os.hostname();
 
-        const sssf = `*FRONEXT MD*
+        const sssf = `*VISHWA-MD*
         
 🎉 *Version :* ${require("../package.json").version}
 🗃️ *Memory :* ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${(os.totalmem() / 1024 / 1024).toFixed(2)}MB
 ⏱️ *Runtime :* ${runtime(process.uptime())}
 📍 *Platform :* ${hostname}
-👤 *Owner :* ᴄʏʙᴇʀ ꜰʀᴏʟʏ
+👤 *Owner :* Vishwa Ofc
 `;
 
         await conn.sendMessage(from, {
@@ -390,8 +390,8 @@ async (conn, mek, m, { from, prefix, pushname, reply }) => {
                 forwardingScore: 999,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterName: 'CYBER FROLY',
-                    newsletterJid: "120363394343494686@newsletter",
+                    newsletterName: 'VISHWA-MD BOT🎭',
+                    newsletterJid: "120363417168743361@newsletter",
                 }
             }
         }, { quoted: mek });
@@ -415,7 +415,7 @@ cmd({
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
         // Construct the bot status message
-        const botStatus = `*FRONEXT MD*
+        const botStatus = `*VISHWA-MD*
         
 *╭───────────────◈◈►*
 *│ 👾 Bot Status: Online*
@@ -430,8 +430,8 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
                 forwardingScore: 999,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterName: 'CYBER FROLY',
-                    newsletterJid: "120363394343494686@newsletter",
+                    newsletterName: 'VISHWA-M BOT🎭',
+                    newsletterJid: "120363417168743361@newsletter",
                 }
             }
         }, { quoted: mek });
