@@ -11,5 +11,5 @@ module.exports = {
     AUTO_VOICE:"true",
     JID: process.env.JID || "120363417168743361@newsletter",
     FOOTER: 'ලස්සන සිංදු 💗🇱🇰',
-    MODE: process.env.MODE || "groups",
+
 };
