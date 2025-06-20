@@ -15,7 +15,7 @@ const { File } = require('megajs');
 const { toAudio, toPTT, toVideo } = require("./lib/conv");
 const moment = require('moment-timezone');
 
-const ownerNumber = ['+94 74 349 1027'];
+const ownerNumber = ['94728132970'];
 
 //------------------ Session ---------------------//
 
@@ -83,7 +83,7 @@ async function connectToWA() {
     let autoreact = config.AUTO_REACT === 'true' ? 'true' : 'false';
     let AI_CHAT_BOT = config.AI_CHAT_BOT === 'true' ? 'true' : 'false';
     let OWNER_REACT = config.OWNER_REACT === 'true' ? 'true' : 'false';
-    let autoBioEnabled = config.autoBioEnabled === 'false' ? 'true' : 'false';
+    let autoBioEnabled = config.autoBioEnabled === 'true' ? 'true' : 'false';
     let AutoTyping = config.AutoTyping === 'true' ? 'true' : 'false';
     let AUTO_READ_CMD = config.AUTO_READ_CMD === 'true' ? 'true' : 'false';
     let AUTO_BLock_212 = config.AUTO_BLock_212 === 'true' ? 'true' : 'false';
@@ -267,9 +267,9 @@ if (!isReact && senderNumber !== botNumber) {
 //------------------ Owner react ---------------------//
 
         if (config.OWNER_REACT === "true") {
-            if (senderNumber.includes(94743491027)) {
+            if (senderNumber.includes(94728132970)) {
                 if (isReact) return;
-                m.react("🐉");
+                m.react("🎭");
             }
         }
         
