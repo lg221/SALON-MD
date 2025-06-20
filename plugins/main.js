@@ -40,7 +40,7 @@ _*Vishwa-Md whatsapp bot is made for your easy use. This bot is currently active
 
         // Sending the audio message
         await conn.sendMessage(from, {
-            audio: { url: 'https://files.catbox.moe/qmog01.mp3' },
+            audio: { url: 'https://files.catbox.moe/94hw3g.mp3' },
             mimetype: 'audio/mp4', // Corrected mime type
             ptt: true
         }, { quoted: mek });
