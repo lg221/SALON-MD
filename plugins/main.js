@@ -3,7 +3,7 @@ const config = require('../config');
 const {readEnv} = require('../lib/database');
 const os = require('os');
 const { getBuffer, getGroupAdmins, getRandom, h2k, isUrl, Json, fetchJson, runtime, sleep } = require('../lib/functions');
-const imgUrl = 'https://i.ibb.co/NfQfVLF/Manul-Ofc-X.jpg'; // This image URL seems unnecessary
+const imgUrl = 'https://files.catbox.moe/rdl1p6.jpg'; // This image URL seems unnecessary
 
 //-----------------------------------------------ALive-----------------------------------------------
 
@@ -85,7 +85,6 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 *❮ʀᴇᴘʟʏ ᴛʜᴇ ɴᴜᴍʙᴇʀ 🗿🏹❯*
 
 *╭────────*
-*│*
 *│❯❯◦*   *1.   OWNER*
 *│❯❯◦*   *2.   CONVERT*
 *│❯❯◦*   *3.   AI*
@@ -96,19 +95,18 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 *│❯❯◦*   *8.   GROUP*
 *│❯❯◦*   *9.   OTHER*
 *│❯❯◦*   *10.  Movie*
-*│*
 *╰─────────*
 
 *ᴩᴏᴡᴇʀᴇᴅ ʙy ᴠɪꜱʜᴡᴀ-ᴍᴅ🎭*`;
 
 
         await conn.sendMessage(from, {
-            audio: { url: 'https://files.catbox.moe/9j9no7.m4a' },
+            audio: { url: 'https://files.catbox.moe/rdl1p6.jpg' },
             mimetype: 'audio/mp4', // Corrected mime type
             ptt: true
         }, { quoted: mek });
 
-        const vv = await conn.sendMessage(from, { image: { url: "https://i.ibb.co/NfQfVLF/Manul-Ofc-X.jpg"}, caption: desc }, { quoted: mek });
+        const vv = await conn.sendMessage(from, { image: { url: "https://files.catbox.moe/rdl1p6.jpg"}, caption: desc }, { quoted: mek });
 
         conn.ev.on('messages.upsert', async (msgUpdate) => {
             const msg = msgUpdate.messages[0];
