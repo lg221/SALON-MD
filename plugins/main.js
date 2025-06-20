@@ -3,7 +3,7 @@ const config = require('../config');
 const {readEnv} = require('../lib/database');
 const os = require('os');
 const { getBuffer, getGroupAdmins, getRandom, h2k, isUrl, Json, fetchJson, runtime, sleep } = require('../lib/functions');
-const imgUrl = 'https://i.ibb.co/KcsDPyb3/3955.jpg'; // This image URL seems unnecessary
+const imgUrl = 'https://i.ibb.co/NfQfVLF/Manul-Ofc-X.jpg'; // This image URL seems unnecessary
 
 //-----------------------------------------------ALive-----------------------------------------------
 
@@ -108,7 +108,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
             ptt: true
         }, { quoted: mek });
 
-        const vv = await conn.sendMessage(from, { image: { url: "https://i.ibb.co/8gMhyC7J/8488.jpg"}, caption: desc }, { quoted: mek });
+        const vv = await conn.sendMessage(from, { image: { url: "https://i.ibb.co/NfQfVLF/Manul-Ofc-X.jpg"}, caption: desc }, { quoted: mek });
 
         conn.ev.on('messages.upsert', async (msgUpdate) => {
             const msg = msgUpdate.messages[0];
