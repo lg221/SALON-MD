@@ -26,7 +26,7 @@ async (conn, mek, m, { from, quoted, isOwner, isAdmins, reply, args }) => {
         const shortenedUrl = response.data;
 
         console.log("Shortened URL:", shortenedUrl); // Ajoutez ceci pour vérifier l'URL raccourcie
-        return reply(`*🛡️YOUR SHORTENED URL*\n\n${shortenedUrl}`);
+        return reply(`*🛡️YOUR SHORTENED URL 🎭*\n\n${shortenedUrl}`);
     } catch (e) {
         console.error("Error shortening URL:", e);
         return reply("An error occurred while shortening the URL. Please try again.");
