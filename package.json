@@ -9,7 +9,7 @@
     "restart": "pm2 restart SALON-MD"
   },
   "dependencies": {
-    "@whiskeysockets/baileys": "npm:@fizzxydev/baileys-pro@8.5.12",
+    "@whiskeysockets/baileys": "npm:sadas-baileys-pro",
     "denethdev-ytmp3": "^1.0.3",
     "@adiwajshing/keyed-db": "^0.2.4",
     "whatsapp-web.js": "1.26.0",
