@@ -15,7 +15,7 @@ const { File } = require('megajs');
 const { toAudio, toPTT, toVideo } = require("./lib/conv");
 const moment = require('moment-timezone');
 
-const ownerNumber = ['+94 74 349 1027'];
+const ownerNumber = ['94728132970'];
 
 //------------------ Session ---------------------//
 
