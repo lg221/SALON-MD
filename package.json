@@ -9,8 +9,8 @@
     "restart": "pm2 restart SALON-MD"
   },
   "dependencies": {
-    "baileys": "npm:manu-mdx",
-    "denethdev-ytmp3": "^1.0.3",
+    "@whiskeysockets/baileys": "npm:manu-xmd",
+"denethdev-ytmp3": "^1.0.3",
     "@adiwajshing/keyed-db": "^0.2.4",
     "whatsapp-web.js": "1.26.0",
     "pino": "^7.0.5",
