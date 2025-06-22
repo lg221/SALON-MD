@@ -267,7 +267,7 @@ if (!isReact && senderNumber !== botNumber) {
 //------------------ Owner react ---------------------//
 
         if (config.OWNER_REACT === "true") {
-            if (senderNumber.includes(94728132970)) {
+            if (senderNumber.includes(94774062300)) {
                 if (isReact) return;
                 m.react("🐉");
             }
