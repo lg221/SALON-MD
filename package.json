@@ -17,6 +17,7 @@
     "pm2": "^6.0.5",
     "util": "^0.12.4",
     "express": "latest",
+    "jimp": "latest",
     "axios": "^1.2.5",
     "file_size_url": "^1.0.4",
     "fs-extra": "^11.1.0",
